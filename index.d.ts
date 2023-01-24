@@ -2,8 +2,6 @@ export function requestFullScreen(element: HTMLElement): boolean;
 export function exitFullScreen(): void;
 export function onFullScreenChange(handler: () => void): () => void;
 
-export function roundAndStringify(pixelsCount: number, options: { precision: number }): string;
-export function roundAsPixels(pixelsCount: number): string;
 // export function roundPixelsForScreen(pixelsCount: number): number;
 
 interface ScrollIntoViewOptions {

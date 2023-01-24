@@ -30,11 +30,7 @@ npm install web-browser-window --save
 * `getVerticalScrollBarWidth(): number` — Returns the width of the vertical scroll bar.
   * Doesn't work in iOS Safari
 
-* `roundAsPixels(pixelsCount: number): string` — Rounds the amount of pixels to a sensible precision value. Example: `123.456789` → `"123.457px"`, because no screen could currently resolve up to a 10,000th fraction of a pixel, and for the time being resolving up to a 1,000th franction of a pixel seems more than enough. This function could be used for less clutter in debugging and also for dealing with really big or really small numbers which could end up converted to a string using "exponential" format as `"1.2345e-50"`, and when a web browser receives such a weird value for a pixels amount, it considers it invalid. And if such an "invalid" pixels amount is used as part of a "complex" CSS property like `box-shadow` then the whole such property gets discarded.
-
-* `roundAndStringify(value: number, { precision: number })` — Rounds the number up to `precision` fractional digits count, and then stringifies it. `roundAsPixels()` uses this function internally with `precision: 3`. Could be used for rounding non-`px` style values like `transform: scale(1.2345...)`.
-
-<!-- * `roundPixelsForScreen(pixelsCount: number): number` — Rounds the amount of pixels specifically for the current device's max resolution (aka "pixel ratio"). For example, on a "2x" "retina" screen, `roundAsPixels(123.45678)` would return `"123.456px"` while `roundPixelsForScreen(123.45678)` would return `123.5` because that specific device's screen can only resolve at most up to a half of a pixel. This is more of an experimental "proof of concept" function though because the regular `roundAsPixels()` function works just fine. -->
+<!-- * `roundPixelsForScreen(pixelsCount: number): number` — Rounds the amount of pixels specifically for the current device's max resolution (aka "pixel ratio"). For example, on a "2x" "retina" screen, `roundPixelsForScreen(123.45678)` would return `123.5` because that specific device's screen can only resolve at most up to a half of a pixel. This is more of an experimental "proof of concept" function though. -->
 
 * `async scrollIntoView(element: Element, options: object)` — Scrolls a DOM `Element` into view.
   * Available `options`:

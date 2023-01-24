@@ -3,8 +3,6 @@ import {
 	exitFullScreen,
 	onFullScreenChange,
 
-	roundAndStringify,
-	roundAsPixels,
 	// roundPixelsForScreen,
 	scrollIntoView,
 
@@ -22,8 +20,6 @@ describe('exports', function() {
 		exitFullScreen.should.be.a('function')
 		onFullScreenChange.should.be.a('function')
 
-		roundAndStringify.should.be.a('function')
-		roundAsPixels.should.be.a('function')
 		// roundPixelsForScreen.should.be.a('function')
 		scrollIntoView.should.be.a('function')
 

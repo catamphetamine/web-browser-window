@@ -2,8 +2,6 @@ export { default as enterFullScreen } from './lib/enterFullScreen.js'
 export { default as exitFullScreen } from './lib/exitFullScreen.js'
 export { default as onFullScreenChange } from './lib/onFullScreenChange.js'
 
-export { default as roundAndStringify } from './lib/roundAndStringify.js'
-export { default as roundAsPixels } from './lib/roundAsPixels.js'
 // export { default as roundPixelsForScreen } from './lib/roundPixelsForScreen.js'
 export { default as scrollIntoView } from './lib/scrollIntoView.js'
 
