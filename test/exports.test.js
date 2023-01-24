@@ -3,7 +3,9 @@ import {
 	exitFullScreen,
 	onFullScreenChange,
 
-	roundPixels,
+	roundAndStringify,
+	roundAsPixels,
+	// roundPixelsForScreen,
 	scrollIntoView,
 
 	getVerticalScrollBarWidth,
@@ -20,7 +22,9 @@ describe('exports', function() {
 		exitFullScreen.should.be.a('function')
 		onFullScreenChange.should.be.a('function')
 
-		roundPixels.should.be.a('function')
+		roundAndStringify.should.be.a('function')
+		roundAsPixels.should.be.a('function')
+		// roundPixelsForScreen.should.be.a('function')
 		scrollIntoView.should.be.a('function')
 
 		getVerticalScrollBarWidth.should.be.a('function')
