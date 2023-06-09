@@ -1,6 +1,11 @@
 import {
 	enterFullScreen,
 	exitFullScreen,
+	toggleFullScreen,
+	isFullScreen,
+	isFullScreenSupported,
+	isFullScreenElement,
+	getFullScreenElement,
 	onFullScreenChange,
 
 	// roundPixelsForScreen,
@@ -19,6 +24,11 @@ describe('exports', function() {
 		enterFullScreen.should.be.a('function')
 		exitFullScreen.should.be.a('function')
 		onFullScreenChange.should.be.a('function')
+		toggleFullScreen.should.be.a('function')
+		isFullScreen.should.be.a('function')
+		isFullScreenSupported.should.be.a('function')
+		isFullScreenElement.should.be.a('function')
+		getFullScreenElement.should.be.a('function')
 
 		// roundPixelsForScreen.should.be.a('function')
 		scrollIntoView.should.be.a('function')

@@ -37,11 +37,21 @@ npm install web-browser-window --save
     * `duration` — (required) Scroll animation duration.
     <!-- * `easing` — Available variants: `"easeInOutSine"`. -->
 
-* `enterFullScreen(): boolean` — Enters fullscreen mode. Returns `true` if succeeded, `false` otherwise.
+* `async enterFullScreen(element: Element): boolean` — Enters fullscreen mode for `element`. Returns `true` if succeeded, throws an error otherwise.
 
-* `exitFullScreen()` — Exits fullscreen mode.
+* `async exitFullScreen(): boolean` — Exits fullscreen mode. Returns `true` if succeeded, throws an error otherwise.
 
-* `onFullScreenChange()` — Listens to fullscreen mode enter/exit.
+* `async toggleFullScreen(element: Element): boolean` — Toggles fullscreen mode for `element`. Returns `true` if succeeded, throws an error otherwise.
+
+* `isFullScreen(): boolean` — Tells whether the page is currently in fullscreen mode.
+
+* `isFullScreenSupported(): boolean` — Tells whether fullscreen mode is supported.
+
+* `isFullScreenElement(element: Element): boolean` — Tells whether the `element` is currently in fullscreen mode.
+
+* `getFullScreenElement(): Element?` — Returns the element that is currently in fullscreen mode.
+
+* `onFullScreenChange(listener)` — Listens to fullscreen mode enter/exit. The `listener` doesn't receive any arguments.
 
 ## Test
 

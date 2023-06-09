@@ -1,5 +1,10 @@
-export function requestFullScreen(element: HTMLElement): boolean;
-export function exitFullScreen(): void;
+export function requestFullScreen(element: HTMLElement): Promise<void>;
+export function exitFullScreen(): Promise<void>;
+export function toggleFullScreen(element: HTMLElement): Promise<void>;
+export function isFullScreen(): boolean;
+export function isFullScreenSupported(): boolean;
+export function isFullScreenElement(element: HTMLElement): boolean;
+export function getFullScreenElement(): HTMLElement;
 export function onFullScreenChange(handler: () => void): () => void;
 
 // export function roundPixelsForScreen(pixelsCount: number): number;

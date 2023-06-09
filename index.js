@@ -1,5 +1,10 @@
 export { default as enterFullScreen } from './lib/enterFullScreen.js'
 export { default as exitFullScreen } from './lib/exitFullScreen.js'
+export { default as toggleFullScreen } from './lib/toggleFullScreen.js'
+export { default as isFullScreen } from './lib/isFullScreen.js'
+export { default as isFullScreenSupported } from './lib/isFullScreenSupported.js'
+export { default as isFullScreenElement } from './lib/isFullScreenElement.js'
+export { default as getFullScreenElement } from './lib/getFullScreenElement.js'
 export { default as onFullScreenChange } from './lib/onFullScreenChange.js'
 
 // export { default as roundPixelsForScreen } from './lib/roundPixelsForScreen.js'
